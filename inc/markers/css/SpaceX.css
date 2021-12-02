@@ -1,0 +1,89 @@
+.spacex {
+  width: 4vw;
+  height: 4vh;
+  background: url("../img/spacex.gif") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+}
+.starlink {
+  width: 8vw;
+  height: 8vh;
+  background: url("../img/starlink.gif") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+  animation-name: starlink;
+  animation-duration: 300s;
+  animation-iteration-count:infinite;
+}
+@keyframes starlink {
+  0%   {left:0px; top:0px;}
+  100% {left:5500px; top:0px;}
+}
+.superheavy {
+  width: 6vw;
+  height: 6vh;
+  background: url("../img/super-heavy.png") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+  animation-name: superheavy;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+}
+@keyframes superheavy {
+  0%   {left:40px; top:0px; transform: rotate(-10deg);}
+  35%  {left:-45px; top:-150px; transform: rotate(5deg);}
+  45%  {left:-45px; top: -50px; transform: rotate(90deg);}
+  75%  {left:-10px; top:-50px; transform: rotate(15deg);}
+  85%  {left:-5px; top:-50px; transform: rotate(15deg);}
+  100% {left:30px; top:0px; transform: rotate(0deg);}
+}
+.starship {
+  width: 5vw;
+  height: 5vh;
+  background: url("../img/starship.png") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+  position: relative;
+  animation-name: starship;
+  animation-duration: 20s;
+  animation-iteration-count:infinite;
+}
+@keyframes starship {
+  0%   {left:23px; top:-35px; transform: rotate(-7deg);}
+  35%  {left:-55px; top:-185px; transform: rotate(5deg);}
+  100% {left:-45px; top:-2000px; transform: rotate(0deg);}
+}
+
+@media (max-width:960px) {
+  @keyframes superheavy {
+    0%   {left:30px; top:-10px; transform: rotate(-10deg);}
+    35%  {left:-45px; top:-150px; transform: rotate(5deg);}
+    45%  {left:-45px; top: -50px; transform: rotate(90deg);}
+    75%  {left:-10px; top:-50px; transform: rotate(15deg);}
+    85%  {left:-5px; top:-50px; transform: rotate(15deg);}
+    100% {left:30px; top:-10px; transform: rotate(0deg);}
+  }
+  @keyframes starship {
+    0%   {left:18px; top:-45px; transform: rotate(-7deg);}
+    35%  {left:-50px; top:-185px; transform: rotate(5deg);}
+    100% {left:-45px; top:-2000px; transform: rotate(0deg);}
+  }
+}
+
+@media (max-width:660px) {
+  @keyframes superheavy {
+    0%   {left:20px; top:-20px; transform: rotate(-10deg);}
+    35%  {left:-45px; top:-150px; transform: rotate(5deg);}
+    45%  {left:-45px; top: -50px; transform: rotate(90deg);}
+    75%  {left:-10px; top:-50px; transform: rotate(15deg);}
+    85%  {left:-5px; top:-50px; transform: rotate(15deg);}
+    100% {left:20px; top:-20px; transform: rotate(0deg);}
+  }
+  @keyframes starship {
+    0%   {left:10px; top:-55px; transform: rotate(-7deg);}
+    35%  {left:-48px; top:-185px; transform: rotate(5deg);}
+    100% {left:-45px; top:-2000px; transform: rotate(0deg);}
+  }
+}

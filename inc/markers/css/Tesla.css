@@ -1,0 +1,7 @@
+.tesla {
+  width: 4vw;
+  height: 4vh;
+  background: url("../img/tesla.gif") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+}

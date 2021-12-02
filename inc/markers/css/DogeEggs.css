@@ -1,0 +1,7 @@
+.DogeEgg {
+  width: 1vw;
+  height: 1vh;
+  background: url("../img/DogeEgg.png") no-repeat scroll 0% 0% transparent;
+  background-size: contain;
+  cursor: pointer;
+}
