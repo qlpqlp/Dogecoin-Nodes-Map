@@ -33,13 +33,12 @@ class DogeBridge {
     }
 
   // update an existent peer
-  public function UpdateNode($ip,$version,$subver,$json)
+  public function UpdateNode($ip,$version,$subver)
     {
       $ip_hash = hash('sha256', $ip); // we do not store the IP, insted we create a checksum of the IP for privacy protection
       $db = $this->pdo->query("UPDATE nodes SET
       version = '".$version."',
       subver = '".$subver."',
-      json = '".$json."',
       date = '".date('Y-m-d H:i:s')."'
       WHERE ip = '".$ip_hash."' limit 1");
 
