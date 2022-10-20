@@ -12,6 +12,9 @@
     $dbuser = ""; // your DB username
     $dbpass = ""; // your DB password
 
+    // an random hash to generate a IP Checksum
+    $dbsalt = "";
+
     // Add your Dogecoin Core Node credentials here!
     $rpcuser = "";
     $rpcpassword = "";
