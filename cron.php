@@ -8,6 +8,7 @@
     // we load the configurationb file
     include("inc/config.php");
     $cron = 1; //we specified this flag to only actuvate some functions to run wen CRON, to only comunicate with the Dogecoin Core Wallet
+
     // we load the functions file
     include("inc/functions.php");
 ?>

@@ -210,7 +210,7 @@ class jsonRPCClient {
 
 		$this->headers = array();
 
-		$fp = fopen($this->url, 'r', false, $context) or die("Error connecting to Dogecoin node! Try again later!");
+		$fp = fopen($this->url, 'r', false, $context);// or die("Error connecting to Dogecoin node! Try again later!");
 
 		if (!$fp) {
 			throw new Exception('Unable to connect to node!');

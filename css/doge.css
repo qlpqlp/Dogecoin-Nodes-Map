@@ -1,32 +1,175 @@
-  .map {
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-  }
-  .btn{
+body {
+    font-family: 'Comic Neue', cursive !important;
+}
+.leaflet-container {
+    font-family: 'Comic Neue', cursive !important;
+}
+#progress {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 400px;
+    top: 300px;
+    width: 200px;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: -100px;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #76a6fc;
+    border-radius: 4px;
+}
+
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+    -webkit-transition: -webkit-transform .3s ease-out, opacity .3s ease-in;
+       -moz-transition:    -moz-transform .3s ease-out, opacity .3s ease-in;
+         -o-transition:      -o-transform .3s ease-out, opacity .3s ease-in;
+            transition:         transform .3s ease-out, opacity .3s ease-in;
+}
+
+.leaflet-cluster-spider-leg {
+    /* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
+    -webkit-transition: -webkit-stroke-dashoffset .3s ease-out, -webkit-stroke-opacity .3s ease-in;
+       -moz-transition:    -moz-stroke-dashoffset .3s ease-out, -moz-stroke-opacity .3s ease-in;
+         -o-transition:      -o-stroke-dashoffset .3s ease-out, -o-stroke-opacity .3s ease-in;
+            transition:         stroke-dashoffset .3s ease-out, stroke-opacity .3s ease-in;
+}
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, .6);
+}
+.marker-cluster-small div {
+    width: 3vw;
+    height: 3vh;
+    background: url('../inc/markers/img/yhellowDogeMiner.gif') no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.marker-cluster-medium {
+    background-color: rgba(241, 211, 87, .6);
+}
+.marker-cluster-medium div {
+    width: 3vw;
+    height: 3vh;
+    background: url('../inc/markers/img/yhellowDogeMiner.gif') no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.marker-cluster-large {
+    background-color: rgba(253, 156, 115, .6);
+}
+.marker-cluster-large div {
+    width: 3vw;
+    height: 3vh;
+    background: url('../inc/markers/img/yhellowDogeMiner.gif') no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    cursor: pointer;
+}
+.marker-cluster span {
+    line-height: 30px;
+    position: relative;
+    top: -30px !important;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px rgba(102, 102, 102, 1);
+}
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+    background-color: rgb(181, 226, 140);
+}
+.leaflet-oldie .marker-cluster-small div {
+    background-color: rgb(110, 204, 57);
+}
+
+.leaflet-oldie .marker-cluster-medium {
+    background-color: rgb(241, 211, 87);
+}
+.leaflet-oldie .marker-cluster-medium div {
+    background-color: rgb(240, 194, 12);
+}
+
+.leaflet-oldie .marker-cluster-large {
+    background-color: rgb(253, 156, 115);
+}
+.leaflet-oldie .marker-cluster-large div {
+    background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+}
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font: 12px;
+}
+.marker-cluster span {
+    line-height: 30px;
+}
+.radiodoge1 {
+    border-radius: 50%;
+    position: absolute;
+    border: 5px solid rgba(102, 255, 0, .5);
+    animation-name: radiodoge;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes radiodoge {
+    0% {
+        border: 10px solid rgba(102, 255, 0, .5);
+    }
+    100% {
+        border: 50px solid rgba(102, 255, 0, .5);
+    }
+}
+.map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.btn {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     word-break: keep-all !important;
-  }
-  .col{
+}
+.col {
     min-width: fit-content;
     padding: 5px;
-  }
-  .dogeload {
+}
+.dogeload {
     position: fixed;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background: url(../img/dogeload.gif) center no-repeat rgba(255, 255, 255, 0.5);
-  }
-  .row{
+    background: url(../img/dogeload.gif) center no-repeat rgba(255, 255, 255, .5);
+}
+.row {
     text-align: center !important;
-  }
-  .colmenu{
+}
+.colmenu {
     text-align: center !important;
-  }
+}
+@media (max-width: 680px) {
+    #slides {
+        display: none;
+    }
+}

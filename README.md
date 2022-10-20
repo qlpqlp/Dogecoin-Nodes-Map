@@ -11,7 +11,7 @@ Dogecoin Nodes Map
 
 2- Create an Data Base and import the file ```nodes.sql```
 
-3- Get a Twitter DEV Account and create an APP and generate the Keys to be able to play with the HashTags on the Map with Twitter!
+3- Get create an account on ipinfo.io and generate a token.
 
 4- Open the file with any text editor ```inc/config.php``` and follow the configurations needed
 
@@ -21,5 +21,4 @@ Dogecoin Nodes Map
 
 ###Notes:
 
-- Later will add the DogeEggs dynamic Logic on the file ```inc/markers/DogeEggs.php```
-- Open the files, try to understand how it works, make some changes and test it, learn with this :)
+- It dosent store the Dogecoin Node IP on the Map Database. The GPS coordinates are taken from the Internet Service provider registration address and not from the node IP home address.
