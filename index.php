@@ -48,7 +48,7 @@
     <div id="map" class="map"></div>
     <!-- This is the javascript file that loads some of the Markers behaviors and also initialize the OpenLayers with OpenStreetMap  -->
 
-<div class="row" style="position: absolute; bottom: 0px; margin: 0px; width: 100% !important">
+<div class="row" style="position: absolute; bottom: 0px; margin: 0px; width: 100% !important; padding: 0px">
     <?php if ($DogeNodesBottomMessage != ""){ ?>
     <div class="col-12" id="slides">
       <button type="button" class="btn btn-dark" style="background-color: rgba(10, 0, 0, 0.5)">
